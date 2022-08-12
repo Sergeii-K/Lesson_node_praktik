@@ -21,17 +21,17 @@ const getArticle = (id) => {
     return result;
 };
 
-// server.get('/', (req, res) => {
-//     const { id } = req.params;
-//     const article = getArticle(Number(id));
-//     // consol.log(article);
+server.get('/:id', (req, res) => {
+    const { id } = req.params;
+    const article = getArticle(Number(id));
+    // consol.log(article);
     
-//     const arr = {brand: article.brand, model: article.model, year: article.year, price: article.price, foto: article.foto};
-//     // console.log(arr);
+    const arr = {brand: article.brand, model: article.model, year: article.year, price: article.price, foto: article.foto};
+    // console.log(arr);
 
-//     // res.send('Hello world')
-//     res.render('test', {arr: product});
-// });
+    // res.send('Hello world')
+    res.render('test2', arr);
+});
 
 server.get('/', (req, res) => {
     const product = [
