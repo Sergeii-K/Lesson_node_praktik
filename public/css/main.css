@@ -1,13 +1,12 @@
 .product {
-  width: 300px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .keyse {
-  width: 23%;
-  height: 350px;
+  width: 25%;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -17,7 +16,7 @@
 .keyse > a {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  align-items: center;
   text-decoration: none;
   color: black;
 }
